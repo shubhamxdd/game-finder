@@ -15,4 +15,4 @@ interface FetchGames {
   results: Game[];
 }
 
-export type { Game, FetchGames };
+export type { Game, FetchGames, Platform };
