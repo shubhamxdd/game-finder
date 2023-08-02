@@ -3,9 +3,9 @@ interface Genre {
   name: string;
 }
 
-interface FetchGenres {
+interface FetchGenres<T> {
   count: number;
-  results: Genre[];
+  results: T[];
 }
 
 export type { Genre, FetchGenres };

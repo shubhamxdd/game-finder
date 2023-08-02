@@ -11,9 +11,5 @@ interface Game {
   parent_platforms: { platform: Platform }[];
   metacritic: number;
 }
-interface FetchGames {
-  count: number;
-  results: Game[];
-}
 
-export type { Game, FetchGames, Platform };
+export type { Game, Platform };
