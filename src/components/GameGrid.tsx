@@ -11,7 +11,7 @@ interface Props {
 
 const GameGrid = ({ selectedGenre }: Props) => {
   const { data, error, isLoading } = useGames(selectedGenre);
-  const skeletons = [1, 2, 3, 4, 5, 6];
+  const skeletons = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
   return (
     <>
       {error && <Text color="tomato">{error}</Text>}
@@ -33,7 +33,7 @@ const GameGrid = ({ selectedGenre }: Props) => {
           ))}
         {data.map((game) => (
           <GameCardContainer key={game.id}>
-            <GameCard key={game.id} game={game} />
+            <GameCard game={game} />
           </GameCardContainer>
         ))}
       </SimpleGrid>
