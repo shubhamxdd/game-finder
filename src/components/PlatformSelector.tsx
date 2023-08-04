@@ -18,27 +18,25 @@ interface Props {
 const PlatformSelector = ({ onSelectPlatform, selectedPlatform }: Props) => {
   const { data } = usePlatform();
   return (
-    <Box marginX={3}>
-      <Menu>
-        <MenuButton as={Button} rightIcon={<AiOutlineDown />}>
-          {selectedPlatform?.name || "Select Platform"}
-        </MenuButton>
-        <MenuList>
-          {data.map((platform) => {
-            return (
-              <MenuItem
-                key={platform.id}
-                onClick={() => {
-                  onSelectPlatform(platform);
-                }}
-              >
-                {platform.name}
-              </MenuItem>
-            );
-          })}
-        </MenuList>
-      </Menu>
-    </Box>
+    <Menu>
+      <MenuButton as={Button} rightIcon={<AiOutlineDown />}>
+        {selectedPlatform?.name || "Select Platform"}
+      </MenuButton>
+      <MenuList>
+        {data.map((platform) => {
+          return (
+            <MenuItem
+              key={platform.id}
+              onClick={() => {
+                onSelectPlatform(platform);
+              }}
+            >
+              {platform.name}
+            </MenuItem>
+          );
+        })}
+      </MenuList>
+    </Menu>
   );
 };
 
