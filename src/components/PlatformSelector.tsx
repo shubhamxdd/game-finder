@@ -1,11 +1,4 @@
-import {
-  Box,
-  Button,
-  Menu,
-  MenuButton,
-  MenuItem,
-  MenuList,
-} from "@chakra-ui/react";
+import { Button, Menu, MenuButton, MenuItem, MenuList } from "@chakra-ui/react";
 import { AiOutlineDown } from "react-icons/ai";
 import usePlatform from "../hooks/usePlatform";
 import { Platform } from "../types/gameTypes";
