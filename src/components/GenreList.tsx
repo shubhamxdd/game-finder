@@ -14,7 +14,7 @@ const GenreList = ({ onSelectGenre, selectedGenre }: Props) => {
   const skeletons = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
   return (
     <>
-      <List>
+      <List marginTop={1}>
         {data.map((genre) => {
           return (
             <ListItem key={genre.id} paddingY="5px">
