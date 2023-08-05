@@ -13,6 +13,7 @@ const EmojiRating = ({ rating }: Props) => {
     4: { src: thumbsUp, alt: "recommended" },
     5: { src: bullsEye, alt: "must play" },
   };
+  if (!rating) return null;
   return <Image {...emojiMap[rating]} boxSize="25px" marginTop={1} />;
 };
 
